@@ -1,12 +1,17 @@
 :root {
   --primary-color: #6c63ff;
+  --brand-color: #8a60f1;
   --secondary-color: #f5f2fe;
+  --color-hover: #212529;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
 }
 
 body {
   margin: 60px auto;
   max-width: 800px;
+  font-family: var(--default-font-family);
 }
 
 h1,
@@ -14,10 +19,11 @@ h2,
 h3 {
   text-align: center;
   margin: 0;
+  font-family: var(--heading-font-family);
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 86px;
 }
 
 h2 {
@@ -36,6 +42,7 @@ p {
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
+  font-weight: 300;
 }
 
 .navigation-links {
@@ -52,13 +59,19 @@ p {
   text-transform: capitalize;
 }
 .primary-link {
-  border-radius: 4px;
+  border-radius: 7px;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+  display: block;
+  text-align: center;
+}
+.primary-link:hover {
+  color: var(--color-hover);
+  background-color: var(--secondary-color);
 }
 
 .about-link {
@@ -76,8 +89,22 @@ p {
   display: flex;
   justify-content: center;
   color: var(--primary-color);
-  font-size: 28px;
+  font-size: 18px;
   text-decoration: none;
+}
+
+footer .social-links a {
+  margin: 25px;
+  color: var(--brand-color);
+  background-color: var(--secondary-color);
+  padding: 15px 20px;
+  font-size: 20px;
+  border-radius: 29%;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: var(--color-hover);
+  background-color: white;
 }
 
 .email-link:hover {
