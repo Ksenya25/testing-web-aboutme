@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #6c63ff;
-  --brand-color: #8a60f1;
+  --primary-color: #d35272;
+  --brand-color: #ed848d;
   --secondary-color: #f5f2fe;
   --color-hover: #212529;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -10,7 +10,7 @@
 
 body {
   margin: 60px auto;
-  max-width: 800px;
+  max-width: 900px;
   font-family: var(--default-font-family);
 }
 
@@ -37,7 +37,7 @@ h3 {
 
 p {
   background: var(--secondary-color);
-  padding: 20px;
+  padding: 15px;
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
@@ -109,7 +109,19 @@ footer .social-links a:hover {
 
 .email-link:hover {
   text-decoration: underline;
+  color: var(--color-hover);
 }
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li.nav-item a {
+  color: var(--brand-color);
+}
+
 @media (max-width: 576px) {
   h1 {
     font-size: 48px;
